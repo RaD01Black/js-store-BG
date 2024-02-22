@@ -1,4 +1,5 @@
 import { postData } from "./utils/httpReq.js";
+import { setCookie } from "./utils/validation.js";
 
 const inputsBox = document.querySelectorAll("input");
 const loginButton = document.querySelector("button");
@@ -15,7 +16,7 @@ const submitHandler = async (event) => {
         username,
         password,
     });
-    document.cookie = `token=${response.token}; max-age=${24 * 60 * 60}, path=/`;
+    setCookie(response.token);
     location.assign("index.html");
 };
 
