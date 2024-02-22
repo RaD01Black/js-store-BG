@@ -15,7 +15,8 @@ const submitHandler = async (event) => {
         username,
         password,
     });
-    document.cookie = `token=${response.token}; max-age=${24 * 60 * 60}`
+    document.cookie = `token=${response.token}; max-age=${24 * 60 * 60}, path=/`;
+    location.assign("index.html");
 };
 
 loginButton.addEventListener("click", submitHandler);
