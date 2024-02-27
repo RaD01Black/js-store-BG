@@ -1,5 +1,6 @@
 import { getCookie } from "./utils/cookie.js"
 import { getData } from "./utils/httpReq.js";
+import { shortenText } from "./utils/stringFunc.js";
 
 const loginButton = document.getElementById("login");
 const dashboardButton = document.getElementById("dashboard");
@@ -12,7 +13,22 @@ const showProducts = (products) => {
         const JSX = `
         <div>
         <img alt=${product.title} src=${product.image} />
-        <h4>${product.title}</h4>
+        <h4>${shortenText(product.title)}</h4>
+        <div id="price">
+        <p>$ ${product.price}</p>
+        <button>
+        BUY
+        <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+        </div>
+        <div id="rate">
+        <i class="fa-solid fa-star"></i>
+        <span>${product.rating.rate}</span>
+        </div>
+        <div id="count">
+        <i class="fa-solid fa-user"></i>
+        <span>${product.rating.count}</span>
+        </div>
         </div>
         `;
 
