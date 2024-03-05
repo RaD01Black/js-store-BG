@@ -66,7 +66,7 @@ header a:hover {
 #filter {
     padding: 20px;
     background-color: #fff;
-    margin-left: 20px;
+    margin-left: 9rem;
     height: fit-content;
     border-radius: 10px;
 }
@@ -76,7 +76,6 @@ header a:hover {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    color: var(--color-primary);
 }
 
 #filter p {
@@ -87,10 +86,11 @@ header a:hover {
     list-style: none;
     padding: 10px 0;
     cursor: pointer;
+    font-weight: 500;
 }
 
 #filter li:hover {
-    color: var(--color-primary);
+    color: rgb(201, 201, 201);
 }
 
 #filter .selected {
@@ -104,7 +104,7 @@ header a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    width: 51rem;
 }
 
 #products > div {
@@ -174,3 +174,11 @@ h4 {
     font-size: 0.9rem;
 }
 
+#search  h1{
+    color: #fff;
+    font-weight:900;
+}
+
+header h3 {
+    font-weight:900;
+}

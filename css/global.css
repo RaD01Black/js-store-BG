@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
-  --color-primary: #2465f7;
+  --color-primary: #0f53f1;
   --color-secondary: #1e66f72a;
-  --color-background: #f8f8f8;
+  --color-background: #191a1a;
   --color-warning: #e9c601;
   --color-error: #f75e4b;
 }
@@ -16,7 +18,12 @@
 body {
   max-width: 1200px;
   margin: auto;
-  background-color: var(--color-background);
+  font-family: "inter",sans-serif;
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
 }
 
 #loader {
